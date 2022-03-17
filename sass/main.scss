@@ -1,0 +1,422 @@
+@use "variables";
+@use "utilities";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap');
+// Globals
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+html{
+    font-size: 63.5%;
+
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-family: "Montserrat", serif;
+    font-weight: 200;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+// Specific Styling
+// Navbar
+.nav-desktop{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-bottom: solid gray thin;
+    align-items: center;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    width: 100%;
+    ul{
+        display: flex;
+    }
+
+    li:hover{
+        background-color: lighten(rgba(0,0,0,0.75), 30%);
+    }
+}
+
+.nav-mobile{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index:2;
+    background-color: rgba(0,0,0);
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 3;
+        li{
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            background-color:rgba(0, 0, 0, 0.205);
+            &:hover{
+                background-color: gray;
+            }
+        }
+    }
+
+    .mobileNavIcon{
+        color: white;
+    }
+}
+
+.hero-wrapper{
+    background-image: url("../images/hero.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.60);
+    background-blend-mode: multiply;
+}
+
+// Hero
+main{
+    text-align: center;
+    color: white;
+    padding: 25vh 0;
+
+    h1{
+        font-size: 10rem;
+        line-height: 1.5;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    p{
+        font-size: 6rem;
+        margin-bottom: 2rem;
+        font-weight: 200;
+    }
+
+    .callToAction{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+
+    .callToAction:hover{
+        background-color: lighten(variables.$callToAction, 10%);
+    }
+}
+
+// Menu
+.menuSelection{
+    margin: 0 4rem;
+    h2{
+        text-align: center;
+        font-size: 6rem;
+        font-weight: 200;
+        padding-top: 2rem;
+    }
+
+    .menuSelectionNav{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 10vw;
+        max-width: 500px;
+        margin: 0 auto;
+        border-bottom: thin gray solid;
+        margin-bottom: 2rem;
+
+        li{
+            width: fit-content;
+            button{
+                background: none;
+                border: none;
+                font-size: 3rem;
+                color: rgb(78, 78, 78);
+                margin: 1rem;
+                
+                &:hover{
+                    background: lighten(rgba(75, 30, 30, 0.5), 10%);
+                    color:rgba(116, 9, 9, 0.774);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .menuItems > ul {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: center;
+        // width: 100%;
+
+        &>li{
+            width: 45%;
+            padding: 2rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-bottom: thin gray solid;
+            margin-left: 1rem;
+
+            h6{
+                font-size: 1.8rem;
+                font-weight: 500;
+                color:rgba(116, 9, 9, 0.774);
+            }
+
+            ul{
+
+                & > li {
+                    line-height: 2;
+                    padding-left: 2rem;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    color: rgb(99, 99, 99);
+                }
+            }
+            img{
+                width: 60%;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+// Menu hidden defaults
+.pizzas{
+    display: flex;
+}
+.sides,
+.drinks,
+.desserts{
+    display: none;
+}
+
+// About Us
+.about{
+    text-align: center;
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 800px;
+        margin: 0 auto;
+        
+
+        .aboutImage{
+            width: 50%;
+            padding: 2rem;
+
+            img{
+                width: 100%;
+            }
+
+            a{
+                color: black;
+            }
+        }
+
+        .aboutParagraph{
+            width: 50%;
+            padding: 2rem;
+            text-align:start;
+
+            p{
+                text-indent: 3rem;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        font-size: 6rem;
+        font-weight: 200;
+        padding-top: 2rem;
+    }
+
+    p{
+        line-height: 2;
+        padding-left: 2rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: rgb(99, 99, 99);
+    }
+}
+
+// Footer
+footer{
+    background-color: darken(variables.$callToAction,6%);
+    padding: 3rem 0 0 0;
+    .container{
+        display:flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        margin: 0 5rem;
+        margin-bottom: 4rem;
+
+        div{
+            
+            color: white;        
+            
+            h6{
+                color:white;
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+            }
+
+            li{
+                margin-bottom: 0.5rem;
+            }
+
+            a{ 
+                color: white;
+            }
+        }
+
+    }
+
+    cite{
+        font-size: 1rem;
+    }
+} 
+
+@media (max-width: 1100px){
+    
+    .nav-desktop{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+    }
+
+    .menuSelection{
+        .menuItems ul{
+            &>li{
+                width: 100%;
+                h6{
+                    font-size: 2rem;
+                }
+
+                ul{
+                    & > li {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        .container{
+            display: block;
+            .aboutImage,
+            .aboutParagraph{
+                width: 100%;
+            }
+            img{
+                width: 100%;
+                background-image: cover;
+            }
+        }
+    }
+
+    main{
+        padding: 10rem 0;
+    
+        h1{
+            font-size: 8rem;
+        }
+    
+        p{
+            font-size: 5rem;
+        }
+    }
+}
+
+@media (max-width: 660px){
+
+    .menuSelection{
+        margin: 0 2rem;
+        h2{
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 200;
+        }
+        .menuSelectionNav{
+            li{
+                button{
+                    font-size: 2rem;
+                    margin: 0;
+                    padding: 1rem;
+                }
+            }
+        } 
+        .menuItems ul{
+            &>li{
+                width: 100%;
+                display: block;
+                div,img{
+                    width: 100%;
+                }
+                h6{
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+                div > ul {
+                    display: flex;
+                    justify-content: center;
+                    flex-flow: row wrap;
+                    margin-bottom: 1rem;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .about{
+        .container{
+            display: block;
+
+            div{
+                width: 100%;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    main{
+        padding: 10rem 0;
+    
+        h1{
+            font-size: 6rem;
+        }
+    
+        p{
+            font-size: 4rem;
+        }
+    }
+}

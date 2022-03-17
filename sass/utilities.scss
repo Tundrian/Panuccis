@@ -1,0 +1,18 @@
+@use "variables";
+// utilities
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+}
+
+.callToAction{
+    background-color: variables.$callToAction;
+
+    &:hover{
+        background-color: lighten(variables.$callToAction, 10%);
+    }
+}
+
+.hidden{
+    display: none;
+}

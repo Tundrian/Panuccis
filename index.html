@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Panucci's Pizza</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/pizza.png" type="image/x-icon">
+</head>
+
+<body>
+	<div class="hero-wrapper">
+		<header>
+			<nav class="nav-desktop">
+				<a href="#" class="nav-logo">Panucci's Pizza</a>
+				<ul>
+					<li><a class="btn" href="#">Home</a></li>
+					<li><a class="btn" href="#menu">Menu</a></li>
+					<li><a class="btn" href="#about">About</a></li>
+					<li><a class="btn" href="#contact">Contact</a></li>
+					<li><a href="#" class="btn callToAction">Order Now</a></li>
+				</ul>
+			</nav>
+
+			<nav class="nav-mobile">
+				<div class="nav-container">
+					<a href="#" class="nav-logo">Panucci's Pizza</a>
+					<i class="fa-solid fa-bars fa-2xl mobileNavIcon"></i>
+				</div>
+				<div class="nav-mobileMenu hidden">
+					<ul class="">
+						<li><a href="#">Home</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#" class="nav-callToAction">Order Now</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<h1>Panucci's Pizza</h1>
+			<p>Fresh, Affordable</p>
+			<a class="btn callToAction" href="#">Order Now</a>
+		</main>
+	</div>
+
+	<section class="menuSelection" id="menu">
+		<h2>Menu</h2>
+		<ul class="menuSelectionNav">
+			<li><button class="btn menuSelection" id="menuPizza">Pizzas</button></li>
+			<li><button class="btn menuSelection" id="menuSides">Sides</button></li>
+			<li><button class="btn menuSelection" id="menuDrinks">Drinks</button></li>
+			<li><button class="btn menuSelection" id="menuDesserts">Desserts</button></li>
+		</ul>
+		<section class="menuItems pizzas">
+			<ul>
+				<li>
+					<div>
+						<h6>Pepperoni</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Tomato Sauce</li>
+							<li>Pepperoni (shredded)</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/pepperoni.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Arugala</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Tomato Sauce</li>
+							<li>Fresh Arugala</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/arugala.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Cheese</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/cheese.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Deluxe</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Tomato Sauce</li>
+							<li>Mushroom (sliced thin)</li>
+							<li>Bacon (crumbs)</li>
+							<li>Fresh spinach</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/deluxe.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Meat Lovers</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Tomato Sauce</li>
+							<li>Beef (crumbs)</li>
+							<li>Bacon (crumbs)</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/meat-lovers.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Mushroom</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Tomato Sauce</li>
+							<li>Mushroom (thin slices)</li>
+							<li>Cherry Tomatoes</li>
+							<li>Rosemary</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/mushroom.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Spicy</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Tomato Sauce</li>
+							<li>Ground Beef</li>
+							<li>Red Cayenne Peppers</li>
+							<li>Black Olives</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/spicy.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Spinach</h6>
+						<ul>
+							<li>Whole Grain Crust</li>
+							<li>Mozzarella Cheese</li>
+							<li>Tomato Sauce</li>
+							<li>Turkey Bacon</li>
+							<li>Fresh Spinach & Arugula</li>
+							<li>Jalapeño Peppers</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/pizza/spinache.jpg" alt="">
+				</li>
+			</ul>
+		</section>
+		<section class="menuItems sides">
+			<ul>
+				<li>
+					<div>
+						<h6>Large Fries</h6>
+						<ul>
+							<li>Baked Russet Potates</li>
+							<li>Cooked in Olive Oil</li>
+							<li>Salt & Pepper</li>
+						</ul>
+					</div>
+					<img src="images/sides/fries.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Garlic Bread</h6>
+						<ul>
+							<li>White Baguette</li>
+							<li>Olive Oil</li>
+							<li>Parmesan Cheese</li>
+							<li>Garlic, Salt, and Oregano</li>
+						</ul>
+					</div>
+					<img src="images/sides/garlic-bread.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Mozzarella Sticks</h6>
+						<ul>
+							<li>Mozzarella</li>
+							<li>Deep Fried Batter</li>
+							<li>Garlic, Salt, Pepper</li>
+						</ul>
+					</div>
+					<img src="images/sides/mozzerella-sticks.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Salad</h6>
+						<ul>
+							<li>Garden Salad</li>
+							<li>Greek Salad</li>
+							<li>Fruit Salad</li>
+							<li>Caesar Salad</li>
+						</ul>
+					</div>
+					<img src="images/sides/salad.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Soup</h6>
+						<ul>
+							<li>Chicken Noodle</li>
+							<li>Cream of Broccoli</li>
+							<li>Clam Chowder</li>
+							<li>Lentil</li>
+						</ul>
+					</div>
+					<img src="images/sides/soup.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Dipping Sauces</h6>
+						<ul>
+							<li>Ranch</li>
+							<li>BBQ</li>
+							<li>Spicey</li>
+							<li>Garlic</li>
+						</ul>
+					</div>
+					<img src="images/sides/sauce.jpg" alt="">
+				</li>
+			</ul>
+		</section>
+		<section class="menuItems drinks">
+			<ul>
+				<li>
+					<div>
+						<h6>Lemonade</h6>
+						<ul>
+							<li>Fresh Lemons</li>
+							<li>White Sugar</li>
+							<li>Water</li>
+						</ul>
+					</div>
+					<img src="images/drinks/lemonade.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Milkshake</h6>
+						<ul>
+							<li>2% Milk or Soy Milk</li>
+							<li>Strawberry</li>
+							<li>Wild Berry</li>
+							<li>Peanut Butter Banana</li>
+						</ul>
+					</div>
+					<img src="images/drinks/shake.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Soda Cans</h6>
+						<ul>
+							<li>Sprite</li>
+							<li>Coka-Cola</li>
+							<li>Diet Coke</li>
+							<li>Fanta Orange</li>
+						</ul>
+					</div>
+					<img src="images/drinks/soda.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Soda Bottles</h6>
+						<ul>
+							<li>Strawberry</li>
+							<li>Lemon</li>
+							<li>Peach</li>
+						</ul>
+					</div>
+					<img src="images/drinks/bottle.jpg" alt="">
+				</li>
+			</ul>
+		</section>
+		<section class="menuItems desserts">
+			<ul>
+				<li>
+					<div>
+						<h6>Brownie</h6>
+						<ul>
+							<li>House-made fudge</li>
+							<li>Vanilla cream layer</li>
+						</ul>
+					</div>
+					<img src="images/dessert/Brownie.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Cake</h6>
+						<ul>
+							<li>Red Velvet</li>
+							<li>New York Cheese Cake</li>
+							<li>Triple Chocolate</li>
+						</ul>
+					</div>
+					<img src="images/dessert/cake.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Pie</h6>
+						<ul>
+							<li>Blueberry</li>
+							<li>Strawberry</li>
+							<li>Apple</li>
+							<li>Pumpkin</li>
+						</ul>
+					</div>
+					<img src="images/dessert/pie.jpg" alt="">
+				</li>
+				<li>
+					<div>
+						<h6>Pistachio Cheesecake</h6>
+						<ul>
+							<li>New York Cheesecake</li>
+							<li>topped with a layer of roasted pistachios</li>
+						</ul>
+					</div>
+					<img src="images/dessert/pistachio.jpg" alt="">
+				</li>
+				
+			</ul>
+		</section>
+
+	</section>
+
+	<section class="about">
+		<h2>About Us</h2>
+		<div class="container">
+			<div class="aboutParagraph">
+				<p>Panucci's has been a family owned restaurant in Windsor since 1994. Since then, we've always strived to use fresh ingredients and to serve the tastiest pizza we can deliver.</p>
+				<p>We cater to a wide range of diets, including a large selection of vegan alternatives to our classic options. Try our in-house restaurant service or have your pizza delivered, either way, enjoy our authentic, delicious Windsor-style pizza today.</p>
+			</div>
+			<div class="aboutImage">
+				<img src="images/owner.jpg" alt="picture of chefs in kitchen">
+			<cite>Photo by <a href="https://unsplash.com/@benu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Benu Marinescu</a> on <a href="https://unsplash.com/s/photos/pizza-restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></cite>
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<footer>
+		<div class="container">
+			<div>
+				<h6>Contact</h6>
+				<ul>
+					<li>Phone: 555-555-5555</li>
+					<li>email: info@panuccispizza.com</li>
+				</ul>
+			</div>
+	
+			<div>
+				<h6>Address</h6>
+				<ul>
+					<li>123 King Street E.</li>
+					<li>Windsor, On</li>
+					<li>N8Nc8N8</li>
+				</ul>
+			</div>
+	
+			<div>
+				<h6>Follow Us</h6>
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
+				</ul>
+			</div>
+		</div>
+		
+
+
+		<cite><a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Freepik - Flaticon</a></cite>
+		
+  
+	</footer>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
