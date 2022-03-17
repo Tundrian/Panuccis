@@ -49,7 +49,7 @@ a {
   padding: 1.5rem 1rem;
   border-bottom: solid gray thin;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #170e0e;
   position: fixed;
   width: 100%;
 }
@@ -65,7 +65,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 2;
-  background-color: black;
+  background-color: #170e0e;
 }
 .nav-mobile .nav-container {
   display: flex;
@@ -76,14 +76,14 @@ a {
 .nav-mobile ul {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #170e0e;
   z-index: 3;
 }
 .nav-mobile ul li {
   width: 100%;
   text-align: center;
   padding: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.205);
+  background-color: #170e0e;
 }
 .nav-mobile ul li:hover {
   background-color: gray;
@@ -246,7 +246,7 @@ main .callToAction:hover {
 }
 
 footer {
-  background-color: #0d5504;
+  background-color: #170e0e;
   padding: 3rem 0 0 0;
 }
 footer .container {
@@ -264,6 +264,9 @@ footer .container div h6 {
   color: white;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  border-bottom: thin white solid;
+  padding: 0;
+  width: fit-content;
 }
 footer .container div li {
   margin-bottom: 0.5rem;
@@ -368,6 +371,25 @@ footer cite {
   }
   main p {
     font-size: 4rem;
+  }
+
+  footer {
+    padding: 2rem 0 0 0;
+  }
+  footer .container {
+    align-items: flex-start;
+    flex-flow: column wrap;
+    margin: 0 2.5rem;
+    margin-bottom: 2rem;
+  }
+  footer .container div h6 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  footer .container div li {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
   }
 }
 
