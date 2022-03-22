@@ -3,12 +3,6 @@ let mobileNavIcon = document.querySelector(".mobileNavIcon")
 let menuSelection = document.querySelector(".menuSelectionNav")
 
 // Dom Functions
-
-// Event Listeners
-mobileNavIcon.addEventListener("click", mobileNavToggle = () => {
-    document.querySelector(".nav-mobileMenu").classList.toggle("hidden")
- })
-
 const toggleMenuItems = (e) => {
     console.log("clicked")
     let pizza = document.querySelector(".pizzas")
@@ -20,9 +14,9 @@ const toggleMenuItems = (e) => {
     sides.style.display = "none"
     drinks.style.display = "none"
     desserts.style.display = "none"
+    document.querySelector(".activeSelection").classList.remove("activeSelection")
     
-    
-    console.log(e.target.id)
+    // console.log(e.target.id)
      switch(e.target.id){
          case 'menuPizza':
             pizza.style.display = "flex"
@@ -37,9 +31,20 @@ const toggleMenuItems = (e) => {
             desserts.style.display = "flex"
             break
      }
+     e.target.classList.add("activeSelection")
+    
+     
 }
 
-menuSelection.addEventListener("click", toggleMenuItems)
+// Event Listeners
+mobileNavIcon.addEventListener("click", mobileNavToggle = () => {
+    document.querySelector(".nav-mobileMenu").classList.toggle("hidden")
+ })
+ menuSelection.addEventListener("click", toggleMenuItems)
+
+
+
+
 
  
 

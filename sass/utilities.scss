@@ -10,9 +10,20 @@
 
     &:hover{
         background-color: lighten(variables.$callToAction, 10%);
+        // padding: 1.1rem 2.1rem;
+        // font-size: 2.1rem;
+        // transition-property: font-size;
+        // transition-duration: 0.25s;
     }
 }
 
 .hidden{
     display: none;
 }
+
+%activeSelection{
+    background: lighten(rgba(75, 30, 30, 0.5), 10%);
+    color:rgba(116, 9, 9, 0.774);
+    cursor: pointer;
+}
+
