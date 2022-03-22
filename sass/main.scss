@@ -11,7 +11,7 @@
 
 html{
     font-size: 63.5%;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -46,9 +46,23 @@ a {
         display: flex;
     }
 
+    li{
+        border-radius: 0.75rem;
+        padding: 1rem 1rem;
+        font-size: 2rem;
+        margin: 0;
+    }
+    
     li:hover{
         background-color: lighten(rgba(0,0,0,0.75), 30%);
     }
+
+    li:last-of-type{
+        &:hover{
+            background-color:#170e0e;
+        }
+    }
+
 }
 
 .nav-mobile{
@@ -145,6 +159,11 @@ main{
 
         li{
             width: fit-content;
+            .activeSelection{
+                @extend %activeSelection;
+                background-color: rgb(108, 200, 108);
+                color: darken(rgb(108, 200, 108), 50%);
+             }
             button{
                 background: none;
                 border: none;
@@ -153,10 +172,14 @@ main{
                 margin: 1rem;
                 
                 &:hover{
-                    background: lighten(rgba(75, 30, 30, 0.5), 10%);
-                    color:rgba(116, 9, 9, 0.774);
-                    cursor: pointer;
+                    // background: lighten(rgba(75, 30, 30, 0.5), 10%);
+                    // color:rgba(116, 9, 9, 0.774);
+                    // cursor: pointer;
+                    @extend %activeSelection;
+                    background-color: lighten(lighten(rgba(75, 30, 30, 0.5), 10%),10%);
                 }
+
+                
             }
         }
     }
@@ -302,6 +325,7 @@ footer{
         font-size: 1rem;
     }
 } 
+
 
 @media (max-width: 1100px){
     

@@ -15,6 +15,12 @@
   display: none;
 }
 
+.menuSelection .menuSelectionNav li .activeSelection, .menuSelection .menuSelectionNav li button:hover {
+  background: rgba(111, 45, 45, 0.5);
+  color: rgba(116, 9, 9, 0.774);
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,6 +30,7 @@
 
 html {
   font-size: 63.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,8 +63,17 @@ a {
 .nav-desktop ul {
   display: flex;
 }
+.nav-desktop li {
+  border-radius: 0.75rem;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  margin: 0;
+}
 .nav-desktop li:hover {
   background-color: rgba(77, 77, 77, 0.75);
+}
+.nav-desktop li:last-of-type:hover {
+  background-color: #170e0e;
 }
 
 .nav-mobile {
@@ -148,6 +164,10 @@ main .callToAction:hover {
 .menuSelection .menuSelectionNav li {
   width: fit-content;
 }
+.menuSelection .menuSelectionNav li .activeSelection {
+  background-color: #6cc86c;
+  color: #0e270e;
+}
 .menuSelection .menuSelectionNav li button {
   background: none;
   border: none;
@@ -156,9 +176,7 @@ main .callToAction:hover {
   margin: 1rem;
 }
 .menuSelection .menuSelectionNav li button:hover {
-  background: rgba(111, 45, 45, 0.5);
-  color: rgba(116, 9, 9, 0.774);
-  cursor: pointer;
+  background-color: rgba(148, 59, 59, 0.5);
 }
 .menuSelection .menuItems > ul {
   display: flex;
